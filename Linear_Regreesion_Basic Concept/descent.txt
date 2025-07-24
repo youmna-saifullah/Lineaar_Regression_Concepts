@@ -1,0 +1,50 @@
+💡 In Machine Learning:
+When we say Gradient Descent, we mean:
+
+"A method to slowly move downhill on a graph of error/loss to find the lowest point 
+(minimum loss)."
+
+🎯 Why do we want to go down?
+Because:
+
+Top of the hill = High error (bad prediction)
+
+Bottom of the hill = Low error (good prediction)
+
+So we keep adjusting our model (like slope m and intercept b) to go down the hill until 
+we reach the best prediction with the lowest error.
+
+Imagine you are blindfolded on a hill and want to reach the bottom.
+You take small steps in the direction that goes down.
+Each step reduces your height (= your error).
+This is gradient descent!
+
+📉 What is the Graph of Error/Loss?
+It’s a curve or graph that shows how bad your model is depending on the values you choose 
+for your parameters (like m and b in Linear Regression).
+
+🧠 Think of it like this:
+X-axis: The model parameter you're changing (e.g., slope m)
+
+Y-axis: The loss or error — how far off your predictions are from the correct answers
+
+🟢 Goal:
+We want to find the lowest point on this graph — where loss is smallest
+→ that means our model is predicting best!
+
+🔻 The shape?
+It usually looks like a U-shaped curve (a bowl):
+Loss
+ ↑
+ |       *
+ |      * *
+ |     *   *         ← high loss (bad model)
+ |    *     *
+ |   *       *
+ |  *         *      ← model is improving
+ | *           *
+ |*             *    ← best spot: minimum loss
+ +----------------→ parameter (like m or b)
+
+📌 And what does Gradient Descent do?
+It helps us walk down this curve, step-by-step, until we reach the lowest loss point.
